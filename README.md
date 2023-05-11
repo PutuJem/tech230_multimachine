@@ -54,7 +54,7 @@ end
 
 Check the repo. contains all of the relevant files:
 
-![Repository](/tech230_app_deployment/images/repo.PNG)
+![Repository](repo.PNG)
 
 ### **Deploy the Virtual Machine and install the relevant JavaScript packages**
 
@@ -76,7 +76,7 @@ Retrieve the appropriate package (`curl -sL`) for the debian distribution within
 
 Confirm the package has been found and is being installed.
 
-![Retrieve NodeJS 6.x](/tech230_app_deployment/images/curl.PNG)
+![Retrieve NodeJS 6.x](curl.PNG)
 
 The appropriate `NodeJS` version (6.x) can now be installed with:
 
@@ -96,14 +96,14 @@ Run the main application file:
 
 The following message should be shown within the terminal; this final line informs the user the application has been deployed to port 3000:
 
-![Port 3000 ready](/tech230_app_deployment/images/port_ready.PNG)
+![Port 3000 ready](port_ready.PNG)
 
 Access the application through entering the local IP address and port number in a browser:
 
     192.168.10.100
 
-The application can now be shown:
+The application can now be shown running:
 
-![sparta_app](/tech230_app_deployment/images/sparta_test.PNG)
+![sparta_app](sparta_test.PNG)
 
 
