@@ -96,7 +96,7 @@ Run the main application file:
 
 The following message should be shown within the terminal; this final line informs the user the application has been deployed to port 3000:
 
-![Port 3000 ready](port_ready.PNG)
+![Port 3000 ready](port_ready.png)
 
 Access the application through entering the local IP address and port number in a browser:
 
