@@ -1,13 +1,5 @@
 # **Deploying an application within a Virtual Machine**
 
-### **Installing the application and environment**
-
-Download the following files and place them within the new repository in the next step:
-
-- Download file: [Application](app)
-
-- Download file: [Environment](environment)
-
 ### **Setting up a new repository with Vagrant**
 
 For this example, create a directory called `app_development`:
