@@ -92,10 +92,54 @@ The following message should be shown within the terminal; this final line infor
 
 Access the application through entering the local IP address and port number in a browser:
 
-    192.168.10.100
+    192.168.10.100:3000
 
 The application can now be shown running:
 
 ![sparta_app](sparta_test.PNG)
 
+### **Additional: Automating the vagrant configuration to run the application directly**
 
+Amend the `provision.sh` file to include the commands to install application dependant JavaScript packages and run the application.
+
+The `provision.sh` file should now display the following:
+
+```
+#!/bin/bash
+
+sudo apt-get update -y
+
+sudo apt-get upgrade -y
+
+sudo apt-get install nginx -y
+
+sudo systemctl start nginx -y
+
+# install application dependant JavaScript packages
+
+sudo apt-get install python-software-properties -y
+
+curl -sL https://deb.nodesource.com/setup_6.x | sudo -E bash -
+
+sudo apt-get install nodejs -y
+
+sudo npm install pm2 -g
+
+# install npm within the app directory run the application
+
+cd app
+
+cd app
+
+npm install
+
+node app.js
+```
+Ensure the vagrant run Virtual Machine is off using `vagrant halt --force`, then rerun the Virtual Machine.
+
+```
+vagrant up
+```
+The final line on the terminal, after executing the vagrant script, should be "`Your app is ready and listening on port 3000`".
+
+Navigate to a web browsers address bar and enter "`192.168.10.100:3000`" to display the application.
